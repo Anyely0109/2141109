@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="scrpt/jquery-3.5.0.min.js"></script>	
+	<script src="https://kit.fontawesome.com/8c3e990eb9.js" crossorigin="anonymous"></script>
+    <script defer src="scrpt/js.js"></script>
+</head>
+<body>
+    <section id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+            <li><a itlist="itlist_0=" href="#" class="item-select-slid"></a></li>
+            <li><a itlist="itlist_1=" href="#"></a></li>
+            <li><a itlist="itlist_2=" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+            <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); z-index: 0; opacity:1;">
+                <div class="content_slider">
+                    <div>
+                        <h2>Emprendimiento empresarial</h2>
+                        <p>Descubra en qué consiste el emprendimiento empresarial por medio de cinco estrategias</p>
+                        <a href="#" class="btnslider">Ver detalles.</a>
+                    </div>
+                </div>            
+            </li>
+            <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index: 0; opacity:1;">
+                <div class="content_slider">
+                    <div>
+                        <h2>Negocios</h2>
+                        <p> Recursos, guías, herraminetas y consejos para emprender, crear tu empresa o iniciar un negocio exitoso</p>
+                        <a href="#" class="btnslider">Ver detalles.</a>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); z-index: 0; opacity:1;">
+                <div class="content_slider">
+                    <div>
+                        <h2>Estrategias de negocio</h2>
+                        <p>Las estrategias de negocios representan planes y metas</p>
+                        <a href="#" class="btnslider">Ver detalles.</a>
+                    </div>
+                </div>            
+            </li>
+
+        </ul>
+    </section>
+    <nav>
+        <h1 class="logo">Brand</h1>
+        <input type="checkbox" id="menuBtn">
+        <label for="menuBtn" class="menuBtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Servicios</a>
+                <ul class="segundo"><!-- se crea la clase segundo como contenedora del segundo nivel  -->
+                    <li><a href="#">Animación</a></li><!-- se listan botones de segundo nivel  -->
+                    <li><a href="#" class="menu3">diseño</a><!-- se crea botón de segundo nivel y una clase contenedora del tercer nivel -->
+                        <ul class="tercero"><!-- se crea la clase del nivel tercero contenedora -->
+                            <li><a href="#">diseño web</a></li><!-- se listan los botones del nivel tercero -->
+                            <li><a href="#">diseño grafico</a></li>
+                            <li><a href="#">ilustración</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">audiovisuales</a></li><!-- se crea el botón del nivel segundo -->
+                </ul>
+            </li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li><a class="active" href="#" target="_blank">Registro</a></li>
+        </ul>
+    </nav>
+    <div class="container1" style="background-color: #704ce7; height: 300px; width: auto;">
+    </div>
+    <div class="container2" style="background-color: #df72b5; height: 300px; width: auto;">
+    </div>
+    <div class="container3" style="background-color: #5dd7e2; height: 300px; width: auto;">
+    </div>
+    <div class="container4" style="background-color: #5489a1; height: 300px; width: auto;">
+        <a href="https://api.whatssap.com/sed?phone=573197957507"><img src="img/whatsap.png" width="80px" height="80px" alt="whatsap"></a>
+        <button onclick="backtotop()" id="btnButton" title="back to top " style="width: 50px; height: 50px;" ><i class="fas fa-angle-up"></i></button><!-- BTN:Es un botón que se destaca entre un conjunto de botones. btn-success : Se utiliza para indicar una acción exitosa (por ejemplo luego de registrarse a un servicio donde se muestra un botón para ir a la página principal del sitio) btn-info : Es un botón para información. -->
+    </div>
+</body>
+</html>
